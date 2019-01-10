@@ -1,2 +1,2 @@
 <?php phpinfo(); ?>
-<?="teste";?> 
+Alteração no clone 
