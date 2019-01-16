@@ -1,0 +1,56 @@
+_________________________________________GIT____________________________________
+
+--1 criar pasta repositório do Git pelo bash
+
+--2 criar repositório no GitHub
+
+--3 primeira configuração do repositório online
+
++Só necessário no primeiro acesso
+
+git config --global user.name "" <>configura nome de usuário do repositório online
+git config --global user.email "" <>configura email de usuário do repositório online
+
+git remote add origin *link* <>pega o link do seu repositório online 
+
+--4 comandos gerais
+
+git add --all <>adiciona todos os arquivos na pasta do Git
+git add .  <>adiciona somente os arquivos que foram modificados
+
+git commit -m "" <>adiciona os arquivos na espera e permite escrever mensagem
+
+git push origin master <>faz o upload dos arquivos em espera para a pasta master
+
+git rm -r ""  <>exclui
+
+git pull <>faz a sincronização dos arquivos no repositório online puxa as alterações
+
+git clone *link* <>baixa os arquivos do link
+
+git status <>mostra o status dos arquivos da pasta de repositório
+
+git log --pretty=format:"%h - %an, %ar : %s" <>exibe os logs formatados 
+git log <>exibe os logs gerais
+
+git checkout *hash* <>pega uma versão especifica 
+git checkout master <>vai pro branch master
+
+git branch <>mostra o branch em que voce esta
+git branch -a  <>mostra os branchs remotos
+
+git checkout -b *nome do novo banch*  <>cria um novo branch a partir do que voce esta
+
+git push origin *branch* <>cria o branch no repositório online
+
+git merge *nome do branch que sera grudado* <>gruda branches
+
+git tag *versão* <>cria uma tag de versionamento 
+git tag -l <>lista todas as tags no sistema
+git push origin master --tags <>sobe as tags 
+
++palavra origin vem de convenção, é uma boa prática
+
++fork é marcar uma cópia de um projeto original
+
++pull request é um envio de codigos para um projeto original
